@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | Crown Girl Plug</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Luxury Feminine Enhancements */
+    .lux-hero {
+      background: linear-gradient(rgba(216,163,157,0.75), rgba(216,163,157,0.75)),
+      url('https://images.pexels.com/photos/3617575/pexels-photo-3617575.jpeg?auto=compress&cs=tinysrgb&w=1200');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    .lux-hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #FFD700;
+      margin-bottom: 1rem;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    .lux-hero p {
+      font-size: 1.3rem;
+      max-width: 650px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid #f3d6d2;
+      transition: 0.4s ease;
+    }
+    .service-card:hover {
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      border-color: #FFD700;
+    }
+
+    .service-card h2 {
+      color: #D8A39D;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .service-card ol {
+      margin-left: 1rem;
+      margin-top: 1rem;
+      text-align: left;
+    }
+
+    .cta-section {
+      margin-top: 4rem;
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #F8EDEA;
+      border-radius: 18px;
+      width: 90%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-section h2 {
+      color: #D8A39D;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .cta-section p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .cta-btn {
+      background: #FFD700;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .cta-btn:hover {
+      opacity: 0.85;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -19,32 +116,49 @@
     </nav>
   </header>
 
-  <section class="services">
-    <h1>Our Services</h1>
-    <div class="service-block">
-      <h2>For Clients</h2>
-      <ol>
-        <li>Find a braider in your area</li>
-        <li>View profiles, portfolios & reviews</li>
-        <li>Pay 50% deposit to confirm booking</li>
-        <li>Enjoy your braiding experience</li>
-      </ol>
-    </div>
+  <!-- Luxury Hero Section -->
+  <section class="lux-hero">
+    <h1>Luxury Braiding Services</h1>
+    <p>Discover premium braiders, effortless booking, and a beauty experience designed to make you feel like royalty.</p>
+  </section>
 
-    <div class="service-block">
-      <h2>For Braiders</h2>
-      <ol>
-        <li>Submit application with work samples</li>
-        <li>Verification & profile setup</li>
-        <li>List availability, pricing & service area</li>
-        <li>Connect with customers & grow</li>
-      </ol>
+  <!-- Service Grids -->
+  <section class="services">
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h2>✨ For Clients</h2>
+        <ol>
+          <li>Find a verified braider near you</li>
+          <li>View portfolios, ratings & real customer reviews</li>
+          <li>Secure your booking with a protected deposit</li>
+          <li>Enjoy a luxury braiding experience</li>
+        </ol>
+      </div>
+
+      <div class="service-card">
+        <h2>👑 For Braiders</h2>
+        <ol>
+          <li>Submit your application & work samples</li>
+          <li>Get verified and build a professional profile</li>
+          <li>List pricing, availability & travel options</li>
+          <li>Get booked by clients and grow your brand</li>
+        </ol>
+      </div>
+
     </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <h2>Ready to Begin Your Crown Journey?</h2>
+    <p>Whether you're booking a stunning new look or joining our network of elite braiders, we’re here to elevate your beauty experience.</p>
+    <a href="Contact.html" class="cta-btn">Get Started</a>
   </section>
 
   <footer>
     <p>&copy; 2025 Crown Girl Plug. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
-
