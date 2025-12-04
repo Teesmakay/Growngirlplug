@@ -111,7 +111,7 @@ a { text-decoration: none; }
 .hero {
   position: relative;
   height: 85vh;
-  background: url('hero.jpg') center/cover no-repeat, var(--pink);
+  background: url('hero-banner-crown-girl-plug.png') center/cover no-repeat, var(--pink);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,3 +279,4 @@ a { text-decoration: none; }
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 0.95rem; }
 }
+
