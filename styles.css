@@ -119,6 +119,7 @@ a { text-decoration: none; }
   padding: 20px;
 }
 
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -279,4 +280,5 @@ a { text-decoration: none; }
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 0.95rem; }
 }
+
 
