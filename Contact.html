@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Crown Girl Plug</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+
+  <style>
+    /* LUXURY FEMININE CONTACT PAGE STYLES */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #fff5f8;
+      color: #4a3d43;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #d49aa3;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #4a3d43;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #d49aa3;
+    }
+
+    /* CONTACT HERO */
+    .contact-hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(255,241,245,0.8), rgba(255,241,245,0.8)),
+        url('https://images.unsplash.com/photo-1601049721803-1f3c2bb5405f') center/cover;
+      color: #4a3d43;
+    }
+
+    .contact-hero h1 {
+      font-size: 55px;
+      letter-spacing: 1px;
+      color: #c37b86;
+    }
+
+    .contact-hero p {
+      max-width: 600px;
+      margin: 15px auto 0;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    /* CONTACT FORM SECTION */
+    .contact {
+      padding: 60px 10%;
+    }
+
+    .contact-forms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .form-box {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .form-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .form-box h2 {
+      color: #c37b86;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
+      border: 1px solid #e8ccd2;
+      background: #fff9fa;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #d49aa3;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      background: #d49aa3;
+      color: white;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    button:hover {
+      background: #c37b86;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: white;
+      margin-top: 60px;
+      color: #8c7279;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,16 +162,26 @@
     </nav>
   </header>
 
+  <!-- LUXURY CONTACT HERO -->
+  <section class="contact-hero">
+    <h1>Let's Connect, Beautiful</h1>
+    <p>
+      Whether you're booking a luxury braiding experience or joining our network of elite braiders—
+      we’re here to make the process soft, simple, and seamless.
+    </p>
+  </section>
+
+  <!-- FORMS SECTION -->
   <section class="contact">
-    <h1>Get in Touch</h1>
     <div class="contact-forms">
+
       <!-- Client Booking Form -->
       <div class="form-box">
         <h2>Book a Braiding Service</h2>
         <form id="clientForm">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="text" placeholder="Location" required>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Location" required />
           <textarea placeholder="Describe your desired style" required></textarea>
           <button type="submit">Submit Booking</button>
         </form>
@@ -39,13 +191,14 @@
       <div class="form-box">
         <h2>Apply as a Braider</h2>
         <form id="braiderForm">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="text" placeholder="Service Area" required>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Service Area" required />
           <textarea placeholder="Describe your braiding experience" required></textarea>
           <button type="submit">Submit Application</button>
         </form>
       </div>
+
     </div>
   </section>
 
@@ -54,4 +207,3 @@
   </footer>
 </body>
 </html>
-
